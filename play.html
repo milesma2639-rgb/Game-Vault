@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arcade Vault - Play</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="play-title">Arcade Vault</h1>
+      <p id="play-description">Loading game page...</p>
+    </header>
+
+    <main class="single-game-main">
+      <section class="card single-game-card">
+        <div class="button-row">
+          <a href="index.html" class="ghost-link">← Back to Hub</a>
+          <a id="official-link" class="play-link" target="_blank" rel="noopener noreferrer">Open Official Site</a>
+        </div>
+        <div class="embed-wrap large-frame">
+          <iframe id="game-frame" class="game-frame" loading="eager" referrerpolicy="no-referrer" title="Game"></iframe>
+          <p class="embed-note">
+            If this frame is blocked by the game site, click <strong>Open Official Site</strong>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>This is a launcher page. Some games block embedding for security reasons.</small>
+    </footer>
+
+    <script src="games-data.js"></script>
+    <script src="play.js"></script>
+  </body>
+</html>

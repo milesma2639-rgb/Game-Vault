@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arcade Vault - Game Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Arcade Vault</h1>
+      <p>Your game hub: open dedicated pages for each game from your own site.</p>
+    </header>
+
+    <main id="game-grid"></main>
+
+    <template id="game-card-template">
+      <section class="card">
+        <h2 class="game-title"></h2>
+        <p class="game-description"></p>
+        <div class="button-row">
+          <a class="play-here-link">Play on This Site</a>
+          <a class="play-link" target="_blank" rel="noopener noreferrer">Open Official Site</a>
+        </div>
+      </section>
+    </template>
+
+    <footer>
+      <small>
+        This portal links to external game websites. It does not bypass access controls,
+        filters, or account/security policies.
+      </small>
+    </footer>
+
+    <script src="games-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
